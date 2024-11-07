@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Strategy UI</title>
+</head>
+<body>
+    <div class="container">
+        <div class="toggle-buttons">
+            <div class="toggle-button active" data-view="Bullish">Bullish</div>
+            <div class="toggle-button" data-view="Bearish">Bearish</div>
+            <div class="toggle-button" data-view="RangeBound">RangeBound</div>
+            <div class="toggle-button" data-view="Volatile">Volatile</div>
+        </div>
+        
+        <div class="dropdown" onclick="toggleDropdown()">
+            <span id="selected-date">25 Apr 2024</span>
+            <span>▼</span>
+        </div>
+        
+        <div id="date-options" style="display: none; margin-bottom: 20px;">
+           
+        </div>
+
+        <div id="strategy-cards" class="strategy-cards">
+            
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
